@@ -1,0 +1,38 @@
+/* Content
+-------------------------------------- */
+
+.images {
+  display: flex;
+  margin-top: 0;
+}
+
+.image {
+  margin-top: 0;
+  flex: 1;
+  padding: 1rem;
+}
+
+.image-item-image img {
+  margin-top: 0;
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+}
+
+.image + .image {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.image-item {
+  width: 100%;
+  margin-top: 0 auto;
+  display: flex;
+  align-items: center;
+  vertical-align: top;
+}
+
+.image-description {
+  margin-top: 20px;
+  text-align: center;
+}

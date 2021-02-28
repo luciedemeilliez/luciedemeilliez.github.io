@@ -1,0 +1,51 @@
+.header--single {
+	margin-bottom: 0;
+}
+
+.single__content {
+	display: flex;
+}
+
+.single__gallery__2 {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+.single__gallery {
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 50px;
+}
+
+.single__gallery img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.single__text {
+	width: 40%;
+	position: fixed;
+	left: 50%;
+	top: 150px;
+	padding: 0 110px;
+	text-align: center;
+}
+
+.single__text__2 {
+	width: 40%;
+	position: fixed;
+	left: 50%;
+	top: 200px;
+	padding: 0 110px;
+	text-align: center;
+}

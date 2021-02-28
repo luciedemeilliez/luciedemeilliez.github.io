@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Contact - lucie demeilliez </title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/contact.css">
+
+		<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="./index.html">
+				<img class="header__logo" src="./img/lightning-bolt.png" alt="Logo lucie demeilliez">
+				</a>
+				<a href="./page_galerie.html">Galerie</a>
+				<a href="./page-a_propos.html">A propos</a>
+				<a href="./page_contact.html">Contact</a>
+		</div>
+
+		<div class="content">
+			<div class="content__heading__contact">
+				<h2>Contactez-moi</h2>
+				<p>Pour tout renseignement, devis...</p>
+			</div>
+
+			<div class="contact__container">
+				<div class="contact__map">
+					<div id="map" class="map"></div>
+					<script>
+						mapboxgl.accessToken = 'pk.eyJ1Ijoib2FkdCIsImEiOiJjaWhtMW1oMHMwMGdldnRrcWhqNW92ZHQ1In0.XyEirlWeo_JlWyogdiDNJQ';
+						var map = new mapboxgl.Map({
+							container: 'map',
+							style: 'mapbox://styles/mapbox/light-v10',
+							center: [5.9203636, 45.5662672],
+							zoom: 15
+						});
+
+						map.on('load', function () {
+							map.resize();
+						});
+					</script>
+				</div>
+
+				<form class="contact__form" action="mailto:lucie.demeilliez@gmail.com" method="post" enctype="text/plain">
+					<div class="form__row form__row--double">
+						<input type="text" placeholder="Nom" name="name">
+						<input type="text" placeholder="Sujet" name="subject">
+					</div>
+
+					<div class="form__row">
+						<input type="text" placeholder="Email" name="email">
+					</div>
+
+					<div class="form__row">
+						<textarea name="name" rows="8" cols="80" placeholder="Votre message..." name="body"></textarea>
+					</div>
+
+					<input type="submit">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
